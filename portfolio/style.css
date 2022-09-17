@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root{
+    --nav : #dca305;
+    --body : #101011;
+    --color : rgb(255, 255, 255);
+    --color-hover : rgb(161, 205, 219);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: var(--body) ;
+    color: var(--color);
+}
+img{
+    max-width: 100%;
+}
+h1{
+    margin-bottom: 15px;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding: 0 30px; */
+}
+.navbar{
+    height: 60px;
+    background-color: var(--nav);
+    
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+.navbar .logo{
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    margin-left: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover{
+    color: var(--body);
+    transition: color 0.2s ease-out;
+}
+
+.header{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-home{
+    text-align: center;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.header h1 span{
+    color: var(--nav);
+}
+.header p{
+    font-size: 1.1rem;
+
+}
+.btn{
+    background: var(--nav);
+    padding: 6px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--body);
+    display: inline-block;
+    border-radius: 4px;
+    margin: 30px 10px;
+    
+}
+.btn:hover{
+    border: 1px solid var(--nav);
+    color: var(--nav);
+    background: none;
+}
+
+.social a{
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+}
+.social a:hover{
+    color: var(--nav);
+}
+
+/*About*/
+
+.about{
+    background-color: #dca305;
+    text-align: center;
+    padding: 100px 0;
+    line-height: 1.8;
+}
+.about h1{
+    text-transform: uppercase;
+    color: var(--body);
+    font-size: 2rem;
+}
+
+.about .btn{
+    background-color: none;
+    color: var(--body);
+    border: 2px solid var(--body);
+}
+.about .btn:hover{
+    background-color: var(--body);
+    color: var(--nav);
+
+}
+.about p{
+    color: var(--body);
+    padding: 20px 0;
+    font-size: 1.125rem;
+}
+
+/*Skill*/
+
+.skill{
+    padding: 100px 0
+    120px 0;
+}
+.skill h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.skill-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.skill-info__list{
+    display: flex;
+    width: 28%;
+}
+
+.skill-icon{
+    font-size: 40px;
+    color: var(--nav);
+    padding-right: 25px;
+}
+.skill-info__list ul{
+    padding: 20px 0;
+}
+.skill-info__list ul li{
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 8px;
+    color: var(--body);
+    display: inline-block;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/*Project*/
+
+.cards{
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.cards h1{
+    text-transform: uppercase;
+    color: var(--body);
+    font-size: 2rem;
+    text-align: center;
+}
+ 
+.card-group{
+    display: flex;
+    
+}
+.card{
+    flex: 1;
+    background-color: var(--body);
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    
+}
+
+
+.card-image img{
+    height: 280px;
+    width: 100%;
+    padding: 3px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-info{
+    padding: 10px 20px;
+    text-align: center;
+}
+.card h3{
+    font-size: 1.2rem;
+}
+.card p{
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-top: 10px;
+
+} 
+
+/*Contact*/
+.contact-container{
+    text-align: center;
+    padding: 100px 20px;
+    
+}
+
+.form input, .form textarea, #sbmt-btn{
+    display: block;
+    border: none;
+    margin:30px auto;
+    width: 70%;
+    padding: 2%;
+}
+input, textarea{
+    background: rgb(255, 255, 255);
+}
+
+::placeholder{
+    color: rgb(32, 28, 42);
+}
+
+.contact-container h2{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--nav);
+    text-transform: uppercase;
+}
+.contact-container p{
+    margin: 25px 0;
+}
+#sbmt-btn{
+    padding: 0.8em 10em ;
+    color: rgb(255, 255, 255);
+    background: #E7AC05;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+#sbmt-btn:hover{
+    background: none;
+    color: #E7AC05;
+    border: 1px solid #E7AC05;
+}
+
+/* footer section styling */
+footer{
+    background: var(--nav);
+    padding: 50px 0;
+    color: var(--body);
+    text-align: center;
+
+    
+}
+footer .social a:hover{
+    color: var(--body);
+}
+footer span{
+    padding: 25px 0;
+    font-weight: 500;
+}
+footer span a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width : 768px){
+    .header .container{
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* .cards .container{
+        flex-direction: column;
+        text-align: center;
+       
+    } */
+    
+    /* This is better than flex-direction: column, for cards*/
+    .cards .container{
+        display: block;
+        text-align: center;
+       
+    }
+
+}
