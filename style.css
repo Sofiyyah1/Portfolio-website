@@ -150,6 +150,7 @@ ul{
 /*Skill*/
 
 .skill{
+    height: 80vh;
     padding: 100px 0
     120px 0;
 }
@@ -204,11 +205,12 @@ ul{
 }
  
 .card-group{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
 }
 .card{
-    flex: 1;
+    /* flex: 1; */
     background-color: var(--body);
     border-radius: 10px;
     margin: 30px;
@@ -306,6 +308,11 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+
+.fa-download, .fa-eye, .fa-code{
+    margin-right: 7px;
+
 }
 
 
