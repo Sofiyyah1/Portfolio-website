@@ -258,7 +258,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
   padding: 0.625rem 0;
-  margin: 3rem 0;
+  margin: 4.5rem 0;
   gap: 30px;
   text-align: center;
 }
