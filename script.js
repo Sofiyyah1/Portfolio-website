@@ -1,8 +1,13 @@
 const navbarToggle = document.querySelector(".navbar__toggle");
+const navbarToggleIcon = document.querySelector(".navbar__toggle i");
 const navbarList = document.querySelector(".navbar__list");
 
 navbarToggle.addEventListener("click", () => {
   navbarList.classList.toggle("navbar__list--open");
+  const isOpen = navbarList.classList.contains("navbar__list--open");
+  navbarToggleIcon.classList = isOpen
+    ? "fa-solid fa-xmark"
+    : "fa-solid fa-bars";
 });
 
 // Toast

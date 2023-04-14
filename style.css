@@ -54,8 +54,11 @@ body {
   cursor: pointer;
   padding: 0.65rem;
 }
+.navbar__toggle i {
+  font-size: 1.3rem;
+}
 
-.navbar__toggle-icon {
+/* .navbar__toggle-icon {
   display: block;
   width: 20px;
   height: 2px;
@@ -75,11 +78,11 @@ body {
 
 .navbar__toggle-icon::before {
   top: -6px;
-}
+} 
 
 .navbar__toggle-icon::after {
   bottom: -6px;
-}
+}*/
 
 .navbar__list {
   list-style: none;
