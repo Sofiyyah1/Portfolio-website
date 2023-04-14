@@ -1,219 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
-    <title>Sophie</title>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">SOPHIE</div>
-                <ul class="nav">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#skill">Skill</a>
-                    </li>   
-                    <li>
-                        <a href="#project">Project</a>
-                    </li>   
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>    
-                </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sophie Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__logo">T.DEV</div>
+        <button class="navbar__toggle" aria-label="Toggle Navigation Menu">
+          <span class="navbar__toggle-icon"></span>
+        </button>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about-me" class="navbar__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#skills" class="navbar__link">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__link">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Front-End Developer</h1>
+          <p class="hero__subtitle">
+            Hi, I'm Taiwo Abdulsalam. I create beautiful and responsive websites
+            with modern web technologies.
+          </p>
+
+          <a href="#projects" class="hero__cta">View My Work</a>
         </div>
-    </nav>
-    <header id="home" class="header">
-        <div class="container">
-            <div class="header-home">
-                <h1>Hello,  <span class="clue">I'm Taiwo Abdulsalam</span>.</h1>
-                <p>Full-stack Web Developer</p>    
-                <a href="#contact" class="btn">Contact Us</a> 
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/taiwo-sofiyat-abdulsalam/"><i class="fab fa-linkedin"></i></i></a>
-                    <a href="https://github.com/Sofiyyah1" target="_blank"><i class="fab fa-github"></i></i></a>
-                    <a href="#"><i class="fab fa-google"></i></a>
-                </div>               
-            </div>
-        </div>              
+      </section>
     </header>
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <h1>About</h1>
-        <p>My name is  Taiwo Abdulsalam and I am a full-stack web developer with a specialty in front-end web development. Also, I have a bachelor's degree in Computer science. Aside from the fact I have a good foundational knowledge of computing, I also have exceptional smart problem-solving skills.</p>
-        <a href="Resume/Sofiyah-Resume.pdf" download="Taiwo-Resume" class="btn"><i class="fas fa-download"></i>  Download Resume</a>
-        <a href="Resume/Sofiyah-Resume.pdf" target="_blank" class="btn"><i class="far fa-eye"></i>  View Resume in Browser</a>
+
+    <main class="main">
+      <section id="about-me" class="about-me">
+        <h2 class="about-me__heading">About Me</h2>
+        <div class="about-me__content">
+          <p>
+            Hi, my name is Taiwo Abdulsalam, and I am a full-stack web developer
+            specializing in front-end web development. I hold a bachelor's
+            degree in Computer Science and have a strong foundation in
+            computing. With my exceptional problem-solving skills, I enjoy
+            taking on challenging problems and building innovative web
+            applications.
+          </p>
+          <!-- <a
+            href="Resume/Sofiyah-Resume.pdf"
+            download="Taiwo-Resume"
+            class="about-me__btn"
+            ><i class="fas fa-download"></i> Download Resume</a
+          > -->
+          <a
+            href="Resume/Taiwo-Abdulsalam.pdf"
+            target="_blank"
+            class="about-me__btn"
+            ><i class="far fa-eye"></i> View Resume in Browser</a
+          >
         </div>
-    </section>
-    <section id="skill" class="skill">
-        <div class="container">
-            <h1>Skills</h1>
-            <div class="skill-info">
-                <div class="skill-info__list">
-                    <div class="skill-icon"><i class="fas fa-desktop"></i></div>
-                    <div class="frontend">
-                        <h2>Front-end</h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>BootStrap</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                        </ul>
-                        </div>
-                </div>
-                <div class="skill-info__list">
-                    <div class="skill-icon"><i class="fas fa-server"></i></div>
-                    <div class="backend">
-                        <h2>Back-end</h2>
-                        <ul>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>SQL</li>
-                            <li>PostgreSQL</li>
-                        </ul>
-                        </div>
-                </div>
-                <div class="skill-info__list">
-                    <div class="skill-icon"><i class="fas fa-wrench"></i></div>
-                    <div class="tools">
-                        <h2>Tools</h2>
-                        <ul>
-                            <li>Figma</li>
-                            <li>Git</li>
-                            <li>GiHub</li>
-                            <li>Vs Code</li>
-                        </ul>
-                        </div>
-                </div>
-            </div>
-        
-        
+      </section>
+      <section id="skills" class="skills">
+        <h2 class="skills__heading">Skills</h2>
+        <div class="skills__content">
+          <div class="skills__info">
+            <h3><i class="fas fa-desktop"></i> Front-end</h3>
+            <ul class="skills__list">
+              <li class="skills__item">HTML</li>
+              <li class="skills__item">CSS</li>
+              <li class="skills__item">BootStrap</li>
+              <li class="skills__item">SASS</li>
+              <li class="skills__item">JavaScript</li>
+              <li class="skills__item">TypeScript</li>
+              <li class="skills__item">React</li>
+            </ul>
+          </div>
+          <div class="skills__info">
+            <h3><i class="fas fa-server"></i> Back-end</h3>
+            <ul class="skills__list">
+              <li class="skills__item">PythonL</li>
+              <li class="skills__item">Django</li>
+              <li class="skills__item">SQL</li>
+              <li class="skills__item">PostgreSQLt</li>
+            </ul>
+          </div>
+
+          <div class="skills__info">
+            <h3><i class="fas fa-wrench"></i> Tools</h3>
+            <ul>
+              <li class="skills__item">Figma</li>
+              <li class="skills__item">Git</li>
+              <li class="skills__item">GiHub</li>
+              <li class="skills__item">Vs Code</li>
+            </ul>
+          </div>
         </div>
-
-    </section>
-    <section id="project" class="cards">
-        <div class="container">
-            <h1>Project</h1>
-            <div class="card-group">
-                <div class="card">
-                    <div class="card-image"><img src="images/price-compare.png" alt=""></div>
-                    <div class="card-info">
-                        <h3>ScoutVendor</h3>
-                        <p>ScoutVendor is an E-commerce website that aims to be the leading service providers to buyers all over the world in price comparing. </p>
-                        <div class="card-btn">
-                            <a href="https://scout-vendor.netlify.app/" class="btn"><i class="far fa-eye"></i> Live Project</a> 
-                            <a href="https://github.com/zuri-training/Team_26_Repo-Proj_Price_Compare" class="btn"><i class="fas fa-code"></i> Code</a> 
-                        </div>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="card-image"><img src="images/url-shortner.jpg" alt=""></div>
-                    <div class="card-info">
-                        <h3>URL shortening API landing page</h3>
-                        <p>The project integrates the shrtcode URL shortening API and aims at shortening url </p>
-                        <div class="card-btn">
-                            <a href="https://sofiyyah1.github.io/Url-shortener-project/" class="btn"><i class="far fa-eye"></i> Live Project</a> 
-                            <a href="https://github.com/Sofiyyah1/Url-shortener-project" class="btn"><i class="fas fa-code"></i> Code</a> 
-                        </div>
-                    </div>
-                    
-                </div>
-                
+      </section>
+      <section id="projects" class="projects">
+        <h2 class="projects__heading">Projects</h2>
+        <div class="projects__grid">
+          <div class="project">
+            <div class="project__img">
+              <img src="images/parthenon2.jpg" alt="" />
             </div>
-            <div class="card-group">
-                <div class="card">
-                    <div class="card-image"><img src="images/static-job-listing.jpg" alt=""></div>
-                    <div class="card-info">
-                        <h3>Job listings with filtering</h3>
-                        <p>This Project list available jobs and filter out jobs based on selected categories. </p>
-                        <div class="card-btn">
-                            <a href="https://sofiyyah1.github.io/React-Job-listing-project/" class="btn"><i class="far fa-eye"></i> Live Project</a> 
-                            <a href="https://github.com/Sofiyyah1/React-Job-listing-project/tree/master" class="btn"><i class="fas fa-code"></i> Code</a> 
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="card-image"><img src="images/easybank.jpg" alt=""></div>
-                    <div class="card-info">
-                        <h3>Easybank landing page</h3>
-                        <p>This project is an Easy-bank account challenge </p>
-                        <div class="card-btn">
-                            <a href="https://sofiyyah1.github.io/Easy-bank-Project/" class="btn"><i class="far fa-eye"></i> Live Project</a> 
-                            <a href="https://github.com/Sofiyyah1/Easy-bank-Project" class="btn"><i class="fas fa-code"></i> Code</a> 
-                        </div>
-                    </div>
-                    
-                </div>
-                
+            <div class="project__details">
+              <h3 class="project__title">The Parthenon</h3>
+              <p class="project__description">
+                The Parthenon is a Web3 consultancy and analytics website that
+                offers purpose-driven consulting services.
+              </p>
+              <p class="project__tech">Technologies used: HTML, CSS, React</p>
+              <div class="project__links">
+                <a
+                  href="https://github.com/Sofiyyah1/react-website-project"
+                  class="project__link"
+                  ><i class="fas fa-code"></i> Code</a
+                >
+                <a
+                  href="https://sofiyyah1.github.io/react-website-project"
+                  class="project__link"
+                  ><i class="far fa-eye"></i> Live Demo</a
+                >
+              </div>
             </div>
-            <!-- <div class="card-group">
-                <div class="card">
-                    <div class="card-image"><img src="images/insure-landing.jpg" alt=""></div>
-                    <div class="card-info">
-                        <h3>Insure landing page</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde error cum sapiente magnam earum Nesciunt omnis illo Nesciunt omnis illo !</p>
-                        <div class="card-btn">
-                            <a href="" class="btn"><i class="far fa-eye"></i> Live Project</a> 
-                            <a href="" class="btn"><i class="fas fa-code"></i> Sorce Code</a> 
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <div class="card-image"><img src="images/bookmark.jpg" alt=""></div>
-                    <div class="card-info">
-                        <h3>Bookmark landing page</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde error cum sapiente magnam earum Nesciunt omnis illo Nesciunt omnis illo !</p>
-                        <div class="card-btn">
-                            <a href="" class="btn"><i class="far fa-eye"></i> Live Project</a> 
-                            <a href="" class="btn"><i class="fas fa-code"></i> Sorce Code</a> 
-                        </div>
-                    </div>
-                    
-                </div>
-            </div> -->          
+          </div>
+
+          <div class="project project-order">
+            <div class="project__details project-order__details">
+              <h3 class="project__title">NFT Cards</h3>
+              <p class="project__description">
+                NFT cards displays multiple cards, each of which reveals
+                additional information and links to the corresponding OpenSea
+                page for purchasing.
+              </p>
+              <p class="project__tech">Technologies used: HTML, CSS, React</p>
+              <div class="project__links">
+                <a
+                  href="https://github.com/Sofiyyah1/nft-cards-website/tree/main"
+                  class="project__link"
+                  ><i class="fas fa-code"></i> Code</a
+                >
+                <a
+                  href="https://sofiyyah1.github.io/nft-cards-website/"
+                  class="project__link"
+                  ><i class="far fa-eye"></i> Live Demo</a
+                >
+              </div>
+            </div>
+            <div class="project__img project-order__img">
+              <img src="images/altura1.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__img">
+              <img src="images/price-compare.png" alt="" />
+            </div>
+            <div class="project__details">
+              <h3 class="project__title">Scout-Vendor</h3>
+              <p class="project__description">
+                ScoutVendor is a global e-commerce platform focused on providing
+                top-notch price comparison services to buyers worldwide with the
+                goal of becoming the premier service provider in the industry.
+              </p>
+              <p class="project__tech">
+                Technologies used: HTML, CSS, React, Python, Django
+              </p>
+              <div class="project__links">
+                <a
+                  href="https://github.com/zuri-training/Team_26_Repo-Proj_Price_Compare"
+                  class="project__link"
+                  ><i class="fas fa-code"></i> Code</a
+                >
+                <a
+                  href="https://scout-vendor.netlify.app/"
+                  class="project__link"
+                  ><i class="far fa-eye"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project project-order">
+            <div class="project__details project-order__details">
+              <h3 class="project__title">Job listings Website</h3>
+              <p class="project__description">
+                Job listings Website objective is to list available jobs and
+                enable filtering based on selected categories.
+              </p>
+              <p class="project__tech">Technologies used: HTML, CSS, React</p>
+              <div class="project__links">
+                <a
+                  href="https://github.com/Sofiyyah1/React-Job-listing-project/tree/master"
+                  class="project__link"
+                  ><i class="fas fa-code"></i> Code</a
+                >
+                <a
+                  href="https://sofiyyah1.github.io/React-Job-listing-project/"
+                  class="project__link"
+                  ><i class="far fa-eye"></i> Live Demo</a
+                >
+              </div>
+            </div>
+            <div class="project__img project-order__img">
+              <img src="images/static-job-listing.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__img">
+              <img src="images/url-shortner.jpg" alt="" />
+            </div>
+            <div class="project__details">
+              <h3 class="project__title">URL-shorten</h3>
+              <p class="project__description">
+                URL-shorten objective is to integrate the shortcode URL
+                shortening API, with the goal of shortening URLs.
+              </p>
+              <p class="project__tech">
+                Technologies used: HTML, CSS, JavaScript
+              </p>
+              <div class="project__links">
+                <a
+                  href="https://github.com/Sofiyyah1/Url-shortener-project"
+                  class="project__link"
+                  ><i class="fas fa-code"></i> Code</a
+                >
+                <a
+                  href="https://sofiyyah1.github.io/Url-shortener-project/"
+                  class="project__link"
+                  ><i class="far fa-eye"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-container">
-                <h2>Get in Touch</h2>
-                <p class="get-in-touch_message">Feel free to Contact me any time, I will get back to you as soon as possible</p>
-                <form class="form">
-                    <input type="text" name="Name" placeholder="Name">
-                    <input type="email" name="Email" placeholder="Email">
-                    <textarea id="message" type="text" name="Message" placeholder="Message" ></textarea>
-                    <input id="sbmt-btn" type="submit" value="SEND" >
-                </form>
-            </div>
+      <section id="contact" class="contact">
+        <h2 class="contact__heading">Contact</h2>
+
+        <form id="form" class="contact__form">
+          <input
+            type="text"
+            name="user_name"
+            id="user_name"
+            class="contact__input"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            type="email"
+            name="user_email"
+            id="user_email"
+            class="contact__input"
+            placeholder="Email"
+            required
+          />
+
+          <textarea
+            name="message"
+            id="message"
+            class="contact__textarea"
+            placeholder="Message"
+            required
+          ></textarea>
+          <ul class="notifications"></ul>
+          <button id="success" type="submit" class="contact__button">
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">
+          Copyright © 2023
+          <span class="footer__name">TASOP</span>
+          All rights reserved.
+        </p>
+        <div class="footer__social">
+          <a
+            href="https://twitter.com/Taiwo_Sofiyyah"
+            class="footer__social-link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/taiwoabdulsalam/"
+            class="footer__social-link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Sofiyyah1" class="footer__social-link"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/taiwo-sofiyat-abdulsalam/"><i class="fab fa-linkedin"></i></i></a>
-            <a href="https://github.com/Sofiyyah1"><i class="fab fa-github"></i></i></a>
-            <a href="#"><i class="fab fa-google"></i></a>
-        </div> 
-        <span><a href="#">Sophie</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
-
+      </div>
     </footer>
 
-    <script src="app.js"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("GTl0ICp5hhajOBnqP");
+    </script>
+
+    <script src="script.js"></script>
+  </body>
 </html>
