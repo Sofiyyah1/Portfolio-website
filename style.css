@@ -293,8 +293,12 @@ body {
 }
 .project__tech {
   padding: 0.9rem;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: bold;
+}
+.project__tech span {
+  font-weight: normal;
+  font-size: 0.9rem;
 }
 .project__links {
   margin-top: 30px;
